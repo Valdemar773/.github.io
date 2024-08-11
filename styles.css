@@ -14,7 +14,7 @@ body {
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
+    color: #8B0000;
     font-size: 40pt; 
     font-weight: normal;
     text-align: center;
@@ -44,6 +44,7 @@ h3{
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
+    
 }
 
 .button:hover {
@@ -95,4 +96,39 @@ p{
     margin-left: 10px; 
     width: 100%; 
     box-sizing: border-box; 
+}
+.i1{
+    position: absolute;
+    top: 450px;  /* расстояние от верхней границы */
+    left: 50px; /* расстояние от левой границы */
+}
+.i2{
+    position: absolute;
+    top: 300px;  /* расстояние от верхней границы */
+    left: 50px; /* расстояние от левой границы */
+}
+.i3{
+    position: absolute;
+    top: 300px;  /* расстояние от верхней границы */
+    left: 550px; /* расстояние от левой границы */
+}
+.i4{
+    position: absolute;
+    top: 300px;  /* расстояние от верхней границы */
+    right: 50px; /* расстояние от левой границы */
+}
+.MCH{
+    position: absolute;
+    top: 305px;  /* расстояние от верхней границы */
+    right: 150px; /* расстояние от левой границы */
+}
+.i5{
+    position: absolute;
+    top: 550px;  /* расстояние от верхней границы */
+    left: 150px; /* расстояние от левой границы */
+}
+.i6{
+    position: absolute;
+    top: 550px;  /* расстояние от верхней границы */
+    right: 150px; /* расстояние от левой границы */
 }
