@@ -4,21 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Герои поля//Тренерский состав</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('pgazon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #8B0000;
+            font-size: 40pt; 
+            font-weight: normal;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff;
+            font-size: 25pt; 
+            font-weight: normal;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin: 10px; 
+            padding: 10px 20px; 
+            background-color: #007BFF; 
+            color: #ffffff; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+
+        .button:hover {
+            background-color: #0056b3; 
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff;
+            font-size: 24pt; 
+            font-weight: normal;
+            text-align: center; 
+            margin-left: 10px; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+        }
+
+        .tr1 {
+            padding: 10px;
+            margin: 12px;
+        }
+
+        .tr2 {
+            padding: 10px;
+            margin: 12px; 
+        }
+    </style>
 </head>
 <body>
     <h1>Тренерский состав</h1>
     <div class="button-container">
-        <button class="button" onclick="window.location.href='indexm.html';">Магазин экиперовки</button>
+        <button class="button" onclick="window.location.href='indexm.html';">Каталог экиперовки</button>
         <button class="button" onclick="window.location.href='indexgt.html';">График тренировок</button>
         <button class="button" onclick="window.location.href='index.html';">На главную</button>
         <button class="button" onclick="window.location.href='indexznt.html';">Записаться на тренировку</button>
     </div>
-    <p>В нашем футбольном клубе работают одни из лучшихх тренеров России, убедитесь в этом сами!</p>
-    <p>Пупкин Максим Владимирович, тренер команды "Юные титаны" (слева)</p>
-    <p>Залупа Алексей Дмитриевич, тренер самых маленьких (справа)</p>
-    <input type="image" class="i5" src="Messi.jpg" alt="Кнопка «input»" height="600" width="300" onclick="window.location.href='https://ru.wikipedia.org/wiki/Месси,_Лионель';">
-    <input type="image" class="i6" src="Suuuiiiiiiiii.jpg" alt="Кнопка «input»" height="600" width="300" onclick="window.location.href='https://ru.wikipedia.org/wiki/Криштиану_Роналду';">
-
+    <p>В нашем футбольном клубе работают одни из лучших тренеров России, убедитесь в этом сами!</p>
+    
+    <div class="image-container">
+        <div>
+            <input type="image" src="Messi.jpg" alt="Кнопка «input»" height="600" width="300" onclick="window.location.href='https://ru.wikipedia.org/wiki/Месси,_Лионель';">
+            <p class="tr2">Иванов Иван Иванович, <br>тренер команды "Юные титаны"</p>
+        </div>
+        <div>
+            <input type="image" src="Suuuiiiiiiiii.jpg" alt="Кнопка «input»" height="600" width="300" onclick="window.location.href='https://ru.wikipedia.org/wiki/Криштиану_Роналду';">
+            <p class="tr1">Алексеев Алескей Алексеевич,<br> тренер самых маленьких</p>
+        </div>
+    </div>
 </body>
 </html>
