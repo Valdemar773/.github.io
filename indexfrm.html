@@ -4,12 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Герои поля//Форма</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        background-image: url('pgazon.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+    }
+    
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        color: #8B0000;
+        font-size: 40pt; 
+        font-weight: normal;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .image-button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 0;
+        position: absolute;
+        top: 100px;
+    }
+    
+    .image-button1 { left: 10px;
+                     top: 275px;
+    }
+    .image-button2 { left: 220px;
+                     top: 275px;
+     }
+    .image-button3 { left: 430px;
+                     top: 275px
+    }
+    .image-button4 { left: 10px;
+                     top: 535px
+    }
+    .image-button5 { left: 220px;
+                     top: 535px;
+    }
+    .image-button6 { left: 430px;
+                     top: 535px;
+    }
+    
+    .modal {
+        display: none; 
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    margin: 10px; 
+    padding: 10px 20px; 
+    background-color: #007BFF; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    
+}
+
+.button:hover {
+    background-color: #0056b3; 
+}
+    </style>
 </head>
 <body>
-    <h1>Извините, по техническим причинам магазин временно не работает</h1> 
-    <div class="button-container">
-        <button class="button" onclick="window.location.href='indexm.html';">Назад</button>
+    <h1>Вы находитесь на вкладке "Форма"</h1>
+
+<button class="image-button image-button1" id="myBtn1">
+    <img src="fut1.jpg" alt="Кнопка-изображение" height="250" width="200">
+</button>
+
+<button class="image-button image-button2" id="myBtn2">
+    <img src="fut2.jpg" alt="Кнопка-изображение" height="250" width="200">
+</button>
+
+<button class="image-button image-button3" id="myBtn3">
+    <img src="fut3.jpg" alt="Кнопка-изображение" height="250" width="200">
+</button>
+
+<button class="image-button image-button4" id="myBtn4">
+    <img src="shor1.jpg" alt="Кнопка-изображение" height="250" width="200">
+</button>
+
+<button class="image-button image-button5" id="myBtn5">
+    <img src="shor2.jpg" alt="Кнопка-изображение" height="250" width="200">
+</button>
+
+<button class="image-button image-button6" id="myBtn6">
+    <img src="shor3.jpg" alt="Кнопка-изображение" height="250" width="200">
+</button>
+
+<div id="myModal1" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBtn1">&times;</span>
+        <p>Название: Футболка для мальчиков Demix Playmaker</p>
+        <p>Описание: Бла бла бла</p>
+        <p>Цена: 999 руб</p>
+        <p>Купить вы его можете в магазине нашего клуба</p>
     </div>
+</div>
+
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBtn2">&times;</span>
+        <p>Название: Футболка для мальчиков Demix League</p>
+        <p>Описание: Бла бла бла</p>
+        <p>Цена: 999 руб</p>
+        <p>Купить вы его можете в магазине нашего клуба</p>
+    </div>
+</div>
+
+<div id="myModal3" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBtn3">&times;</span>
+        <p>Название: Ветровка для мальчиков Demix Midfielder</p>
+        <p>Описание: Бла бла бла</p>
+        <p>Цена: 3.999 руб</p>
+        <p>Купить вы его можете в магазине нашего клуба</p>
+    </div>
+</div>
+
+<div id="myModal4" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBtn4">&times;</span>
+        <p>Название: Шорты для мальчиков Demix Matchday</p>
+        <p>Описание: Бла бла бла</p>
+        <p>Цена: 899 руб</p>
+        <p>Купить вы его можете в магазине нашего клуба</p>
+    </div>
+</div>
+
+<div id="myModal5" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBtn5">&times;</span>
+        <p>Название: Шорты для мальчиков Demix Playmaker</p>
+        <p>Описание: Бла бла бла</p>
+        <p>Цена: 1.299 руб</p>
+        <p>Купить вы его можете в магазине нашего клуба</p>
+    </div>
+</div>
+
+<div id="myModal6" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBtn6">&times;</span>
+        <p>Название: Брюки для мальчиков Demix Playmaker</p>
+        <p>Описание: Бла бла бла</p>
+        <p>Цена: 2.599 руб</p>
+        <p>Купить вы его можете в магазине нашего клуба</p>
+    </div>
+</div>
+
+
+<script>
+    // Функция для привязки событий к кнопкам и модальным окнам
+    function setupModal(buttonId, modalId, closeId) {
+        var modal = document.getElementById(modalId);
+        var btn = document.getElementById(buttonId);
+        var span = document.getElementById(closeId);
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+
+    // Настройка модальных окон для каждой кнопки
+    setupModal("myBtn1", "myModal1", "closeBtn1");
+    setupModal("myBtn2", "myModal2", "closeBtn2");
+    setupModal("myBtn3", "myModal3", "closeBtn3");
+    setupModal("myBtn4", "myModal4", "closeBtn4");
+    setupModal("myBtn5", "myModal5", "closeBtn5");
+    setupModal("myBtn6", "myModal6", "closeBtn6");
+</script>
+<div class="button-container">
+    <button class="button" onclick="window.location.href='indexm.html';">Назад</button>
+</div>
 </body>
 </html>
